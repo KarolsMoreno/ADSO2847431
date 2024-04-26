@@ -4,10 +4,10 @@
 
 ---
 
-![Hollow Knight](https://tinyurl.com/2ntswdmy)
+![Hollow Knight](https://tinyurl.com/bdejzzys)
 | # |Topic       | Description        |
 |---|---         |---                 |
 |01 |Javascript  | JS Vainilla Objects|
 
 
-[Files Drive ADSO](https://tinyurl.com/bdejzzys)
+[Files Drive ADSO](https://tinyurl.com/4657t2vw)
