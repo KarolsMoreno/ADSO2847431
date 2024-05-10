@@ -87,7 +87,7 @@ nav{
     }
 }
 nav:is(:hover) {
-    background-color: #4c0e2d;
+    background-color: #ba86a1;
         transform: scale(1.02) translateY(-2px);
 }
 main{
