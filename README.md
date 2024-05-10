@@ -10,4 +10,8 @@
 |01 |Javascript  | JS Vainilla Objects|
 
 
-[Files Drive ADSO](https://karol2847431.netlify.app/)
+[Files Drive ADSO](https://tinyurl.com/4657t2vw)
+
+| URL  Netlify/Vercel|
+|--- |
+|[Open link](https://karol2847431.netlify.app/)|
