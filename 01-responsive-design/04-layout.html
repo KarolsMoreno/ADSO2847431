@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <a name="home"></a>
+        <!--Navbar-->
+        <header>
+            <img src="img/Logo.png" alt="Isologo">
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#characters">CHARACTERS</a>
+                <a href="#environments">ENVIRONMENTS</a>
+                <a href="#description">DESCRIPTION</a>
+            </nav>    
+        </header>
+    
+        <!--slider-->
+    
+        <section class="slider1 owl-carousel owl-theme">
+                <img src="img/Slider01.png" alt="slider01">
+                <img src="img/Slider01.png" alt="slider02">
+                <img src="img/Slider01.png" alt="slider03">
+            </section>
+
+        <section class="Characters">
+            <h2>Characters
+        <a name="characters"></a>
+            </h2>
+        <div class="slider2 owl-carousel owl-theme">
+            <article>
+                <figure>
+                    <img src="img/JACK.png" alt="JACK">
+                    <figcaption>JACK SKELLINGTON</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/SALLIE.png" alt="SALLIE">
+                    <figcaption>SALLIE FRANKSTEIN</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/SANTATOROZ.png" alt="SANTATOROZ">
+                    <figcaption>SANTA ATROZ</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/OOGIE.png" alt="OOGIE">
+                    <figcaption>OOGIE BOOGIE</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/lock.jpeg" alt="LOCK ">
+                    <figcaption>LOCK</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/shock.jpeg" alt="SHOCK">
+                    <figcaption>SHOCK</figcaption>
+                </figure>
+            </article>
+           </div>
+        </section> 
+    <section class="environments">
+        <h2>
+            <a name="environments"></a>
+            ENVIRONMENTS
+        </h2>
+    <div class="slider3 owl-carousel owl-theme">
+        <article>
+            <figure>
+                <img src="img/christmas.png" alt="christmas">
+                <figcaption>Christmas</figcaption>
+            </figure>
+            <aside>
+                <h3>
+                    CHRISTMAS DOOR
+                </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nulla blanditiis sint illo error. Voluptas corporis a laudantium rerum sapiente voluptatibus voluptates deserunt ipsam temporibus perspiciatis laborum, quo provident iste?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem iusto nam corporis quisquam est quas consequuntur, veniam voluptas eius asperiores, rerum animi eaque ducimus quo magni labore obcaecati. Minima?</p>
+            </aside>
+        </article>
+        <article>
+            <figure>
+                <img src="img/halloween.png" alt="halloween">
+                <figcaption>HALLOWEEN</figcaption>
+            </figure>
+            <aside>
+                <h3>HALLOWEEN DOOR</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quo. Ipsum tempore accusantium error optio natus consectetur minus reprehenderit? Reprehenderit, id exercitationem quas sapiente sequi odio inventore earum voluptates amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusamus autem id labore explicabo quo dolores nemo sit quasi nulla, atque non sapiente accusantium repellat earum quas ut natus quod!</p>
+            </aside>
+        </article>
+    </div>
+    </section>
+
+    <section class="description">
+        <h2>
+            <a name="description"></a>
+            DESCRIPTION
+        </h2>
+        <div class="slider4 owl-carousel owl-theme">
+            <article>
+                <img src="img/salie.png" alt="salie">
+                <img src="img/jacko.png" alt="jack">
+            </article>
+
+            <article>
+                <img src="img/alcalde.png" alt="alcalde">
+                <img src="img/barrel.png" alt="barrel">
+            </article>
+
+            <article>
+                <img src="img/boogie.png" alt="boogie">
+                <img src="img/zero.png" alt="zero">
+            </article>
+            <article>
+                <img src="img/shock.png" alt="">
+                <img src="img/lock.png" alt="">
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <figure class="social">
+            <img src="img/facebook.png" alt="face">
+            <img src="img/insta.png" alt="insta">
+            <img src="img/tiktok.png" alt="tiktok">
+            <img src="img/twiter.png" alt="twiter">
+        </figure>
+        <p>© All rights reserved 2024</p>
+    </footer>
+    
+        </main>
+    
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $('header').on('click', '.btn-burger', function() {
+                    $(this).toggleClass('active')
+                })
+                $(window).on("resize", function(){
+                    if(parseInt($(window).width())>960) {
+                        $('.btn-buger').removeClass('active')
+                        $('.menu-burger').removeClass('active')
+                    }
+                })
+
+                $('.slider1').owlCarousel({
+                    stagePadding: 0,
+                    items: 1,
+                    loop: true,
+                    nav: true
+                })
+
+                $('.slider2').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    responsive:{
+                        0:{
+                            items: 1
+                        },
+                        600:{
+                            items: 2
+                        },
+                        1000:{
+                            items: 4
+                        }
+                    }
+                })
+
+                $('.slider3').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    responsive:{
+                        0:{
+                            items: 1
+                        },
+                        800:{
+                            items: 1
+                        },
+                        1200:{
+                            items: 2
+                        }
+                    }
+                })
+
+                $('.slider4').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    dots: false,
+                    nav: true,
+                    responsive:{
+                        0:{
+                            items: 2
+                        },
+                        600:{
+                            items: 3
+                        },
+                        1000:{
+                            items: 4
+                        }
+                    }
+                })
+            })
+            
+        </script>
+</body>
+</html>
